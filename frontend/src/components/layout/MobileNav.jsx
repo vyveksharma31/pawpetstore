@@ -116,9 +116,9 @@ export default function MobileNav({ isOpen, onClose }) {
           </Link>
 
           <Link
-            to="/products?category=accessories"
+            to="/accessories"
             onClick={onClose}
-            className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-800"
+            className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-zinc-800 text-sm font-medium text-slate-800 dark:text-zinc-200"
           >
             <div className="flex items-center gap-3">
               <span className="text-lg">🦴</span>

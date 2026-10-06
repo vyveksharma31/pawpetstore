@@ -255,7 +255,7 @@ export default function Navbar({ onOpenMobileNav }) {
             </Link>
             <Link to="/cats" className="hover:text-brand-500 dark:hover:text-brand-400 transition-colors">Cats</Link>
             <Link to="/birds" className="hover:text-brand-500 dark:hover:text-brand-400 transition-colors">Birds</Link>
-            <Link to="/products?category=accessories" className="hover:text-brand-500 dark:hover:text-brand-400 transition-colors">Accessories</Link>
+            <Link to="/accessories" className="hover:text-brand-500 dark:hover:text-brand-400 transition-colors">Accessories</Link>
             <Link to="/products" className="hover:text-brand-500 dark:hover:text-brand-400 transition-colors">All Products</Link>
             <Link to="/clinic" className="text-teal-700 dark:text-teal-400 hover:text-teal-800 dark:hover:text-teal-300 transition-colors font-semibold flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />

@@ -1126,6 +1126,127 @@ const products = [
     specifications: {
       'Grip': 'Ergonomic Non-slip Silicone'
     }
+  },
+  {
+    id: 'prod-a04',
+    name: 'Smart WiFi Automatic 4L Pet Feeder with Voice Recording & App Control',
+    slug: 'smart-wifi-automatic-pet-feeder-4l',
+    brand: 'PawPetStore Smart',
+    petType: 'general',
+    category: 'Accessories',
+    subCategory: 'Bowls & Feeders',
+    price: 3999,
+    discountPercentage: 20,
+    stock: 18,
+    rating: 4.9,
+    reviewCount: 142,
+    isFeatured: true,
+    breedSuitability: ['All Breeds', 'Cats', 'Dogs'],
+    images: [
+      'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Programmable portion control delivering 1 to 10 meals per day. Dual power supply with battery backup and 10-second personalized meal call voice recorder.',
+    specifications: {
+      'Capacity': '4 Liters (Dry Kibble)',
+      'Connectivity': '2.4GHz Wi-Fi + Smart App',
+      'Power': 'Type-C USB + 3x D-Cell Battery Backup'
+    }
+  },
+  {
+    id: 'prod-a05',
+    name: 'Eco-Friendly Plant-Based Waste Poop Bags (240 Count + Bone Dispenser)',
+    slug: 'eco-friendly-pet-waste-bags-240-count',
+    brand: 'PawPetStore Clean',
+    petType: 'general',
+    category: 'Accessories',
+    subCategory: 'Waste Cleanup',
+    price: 399,
+    discountPercentage: 15,
+    stock: 90,
+    rating: 4.8,
+    reviewCount: 310,
+    isFeatured: false,
+    breedSuitability: ['All Breeds'],
+    images: [
+      'https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Extra thick leak-proof cornstarch bags with soothing lavender scent lock. Includes ergonomic carabiner clip bone dispenser.',
+    specifications: {
+      'Quantity': '16 Rolls (15 bags/roll = 240 bags)',
+      'Material': 'EPI + Cornstarch Certified Biodegradable'
+    }
+  },
+  {
+    id: 'prod-a06',
+    name: 'All-Weather Waterproof Reflective Pet Raincoat with Hood',
+    slug: 'all-weather-waterproof-reflective-raincoat',
+    brand: 'PawPetStore Outdoor',
+    petType: 'general',
+    category: 'Accessories',
+    subCategory: 'Apparel & Raincoats',
+    price: 899,
+    discountPercentage: 22,
+    stock: 45,
+    rating: 4.7,
+    reviewCount: 165,
+    isFeatured: true,
+    breedSuitability: ['Beagle', 'Golden Retriever', 'Labrador', 'Indie', 'Pug'],
+    images: [
+      'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'High-visibility reflective safety strips, water-repellent breathable polyester membrane, and adjustable belly harness strap for stormy walks.',
+    specifications: {
+      'Sizes': 'S, M, L, XL, XXL',
+      'Waterproof Rating': '10,000 mm Hydrostatic Head'
+    }
+  },
+  {
+    id: 'prod-a07',
+    name: '2-in-1 Low-Noise Pet Hair Dryer & Slicker Grooming Blower',
+    slug: '2-in-1-low-noise-pet-hair-dryer-slicker',
+    brand: 'PawPetStore Care',
+    petType: 'general',
+    category: 'Accessories',
+    subCategory: 'Grooming & Shampoos',
+    price: 1899,
+    discountPercentage: 18,
+    stock: 25,
+    rating: 4.8,
+    reviewCount: 118,
+    isFeatured: false,
+    breedSuitability: ['All Breeds', 'Persian Cat', 'Golden Retriever', 'Shih Tzu'],
+    images: [
+      'https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Combines a warm whisper-quiet drying blower (<65dB) with stainless steel massage slicker pins to dry and detangle soaked pets simultaneously.',
+    specifications: {
+      'Heat Settings': 'Low (45°C), High (60°C)',
+      'Power': '300W Energy-Saving Copper Motor'
+    }
+  },
+  {
+    id: 'prod-a08',
+    name: 'Expandable Bubble Window Airline Pet Carrier Backpack',
+    slug: 'expandable-bubble-pet-carrier-backpack',
+    brand: 'PawPetStore Travel',
+    petType: 'general',
+    category: 'Accessories',
+    subCategory: 'Carriers & Crates',
+    price: 2499,
+    discountPercentage: 20,
+    stock: 20,
+    rating: 4.9,
+    reviewCount: 205,
+    isFeatured: true,
+    breedSuitability: ['Small Dogs', 'Cats', 'Rabbits'],
+    images: [
+      'https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Panoramic clear view bubble capsule with fold-out expandable mesh tent backing that doubles pet resting space during road trips and airport layovers.',
+    specifications: {
+      'Max Weight': 'Up to 9 kg',
+      'Ventilation': '9 Heavy-Duty Air Holes + Dual Mesh Windows'
+    }
   }
 ];
 

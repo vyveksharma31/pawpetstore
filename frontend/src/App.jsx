@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import DogsPage from './pages/DogsPage';
 import CatsPage from './pages/CatsPage';
 import BirdsPage from './pages/BirdsPage';
+import AccessoriesPage from './pages/AccessoriesPage';
 import ProductListPage from './pages/ProductListPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="dogs" element={<DogsPage />} />
         <Route path="cats" element={<CatsPage />} />
         <Route path="birds" element={<BirdsPage />} />
+        <Route path="accessories" element={<AccessoriesPage />} />
         <Route path="products" element={<ProductListPage />} />
         <Route path="products/:id" element={<ProductDetailPage />} />
         <Route path="cart" element={<CartPage />} />
