@@ -136,4 +136,25 @@ const getMe = async (req, res) => {
   });
 };
 
-module.exports = { register, login, getMe };
+// @desc    Update user profile & address book
+// @route   PUT /api/auth/profile
+// @access  Private
+const updateProfile = async (req, res, next) => {
+  try {
+    const userId = req.user.id || req.user._id;
+    const { name, phone, addresses, wishlist } = req.body;
+    const updated = await store.updateUser(userId, { name, phone, addresses, wishlist });
+    res.status(200).json({
+      success: true,
+      statusCode: 200,
+      message: 'Profile updated successfully',
+      data: {
+        user: updated,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = { register, login, getMe, updateProfile };

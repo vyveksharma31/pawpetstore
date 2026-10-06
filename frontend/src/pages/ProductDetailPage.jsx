@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { api } from '../services/api';
 import { useCart } from '../context/CartContext';
+import { useWishlist } from '../context/WishlistContext';
 import { formatCurrency, calculateDiscount } from '../utils/formatCurrency';
 import ImageWithFallback from '../components/common/ImageWithFallback';
 import Button from '../components/common/Button';
@@ -26,15 +27,17 @@ export default function ProductDetailPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { addToCart } = useCart();
+  const { isInWishlist, toggleWishlist } = useWishlist();
 
   const [product, setProduct] = useState(null);
   const [related, setRelated] = useState([]);
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('overview');
-  const [isWishlisted, setIsWishlisted] = useState(false);
   const [added, setAdded] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const isWishlisted = product ? isInWishlist(product.id || product._id) : false;
 
   useEffect(() => {
     async function fetchProduct() {
@@ -288,7 +291,7 @@ export default function ProductDetailPage() {
                   </Button>
 
                   <button
-                    onClick={() => setIsWishlisted(!isWishlisted)}
+                    onClick={() => product && toggleWishlist(product)}
                     className={`p-3.5 rounded-xl border transition-colors ${
                       isWishlisted
                         ? 'border-rose-200 bg-rose-50 text-rose-500'

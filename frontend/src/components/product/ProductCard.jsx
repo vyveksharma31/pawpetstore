@@ -2,21 +2,23 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, ShoppingBag, Heart, Check } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
+import { useWishlist } from '../../context/WishlistContext';
 import { formatCurrency, calculateDiscount } from '../../utils/formatCurrency';
 import ImageWithFallback from '../common/ImageWithFallback';
 import Badge from '../common/Badge';
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
+  const { isInWishlist, toggleWishlist } = useWishlist();
   const [added, setAdded] = useState(false);
-  const [isWishlisted, setIsWishlisted] = useState(false);
 
   if (!product) return null;
 
+  const productId = product.id || product._id;
+  const isWishlisted = isInWishlist(productId);
   const discountedPrice = calculateDiscount(product.price, product.discountPercentage);
   const isOutOfStock = product.stock <= 0;
   const isLowStock = product.stock > 0 && product.stock <= 5;
-  const productId = product.id || product._id;
 
   const handleAddToCart = (e) => {
     e.preventDefault();
@@ -31,7 +33,7 @@ export default function ProductCard({ product }) {
   const handleToggleWishlist = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    setIsWishlisted(!isWishlisted);
+    toggleWishlist(product);
   };
 
   return (

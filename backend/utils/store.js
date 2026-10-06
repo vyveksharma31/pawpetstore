@@ -244,6 +244,26 @@ const store = {
     return newUser;
   },
 
+  async updateUser(userId, updateData) {
+    if (getDBStatus()) {
+      try {
+        const u = await User.findByIdAndUpdate(userId, updateData, { new: true });
+        if (u) return u;
+      } catch (err) {
+        console.warn('DB updateUser error:', err.message);
+      }
+    }
+    const idx = memoryUsers.findIndex(u => u.id === userId || u._id === userId);
+    if (idx !== -1) {
+      if (updateData.name) memoryUsers[idx].name = updateData.name;
+      if (updateData.phone !== undefined) memoryUsers[idx].phone = updateData.phone;
+      if (updateData.addresses) memoryUsers[idx].addresses = updateData.addresses;
+      if (updateData.wishlist !== undefined) memoryUsers[idx].wishlist = updateData.wishlist;
+      return memoryUsers[idx];
+    }
+    return null;
+  },
+
   // --- ORDERS ---
   async createOrder(orderData) {
     const newOrder = {

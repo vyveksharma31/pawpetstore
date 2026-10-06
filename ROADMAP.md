@@ -411,7 +411,7 @@
 ---
 
 ### PHASE 15 — User Account Dashboard
-- **Status:** [ ] Not started
+- **Status:** [x] Completed
 - **Objective:** Create a personalized, responsive customer portal (`/account`) for managing orders, appointments, profile, and saved addresses.
 - **Features:**
   - Tabbed or sidebar navigation: Profile Overview, Order History, Vet Appointments, Saved Addresses, Wishlist.

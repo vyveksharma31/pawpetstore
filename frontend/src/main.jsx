@@ -6,6 +6,7 @@ import { AuthProvider } from './context/AuthContext.jsx';
 import { CartProvider } from './context/CartContext.jsx';
 import { LocationProvider } from './context/LocationContext.jsx';
 import { ThemeProvider } from './context/ThemeContext.jsx';
+import { WishlistProvider } from './context/WishlistContext.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,9 +15,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <ThemeProvider>
         <AuthProvider>
           <CartProvider>
-            <LocationProvider>
-              <App />
-            </LocationProvider>
+            <WishlistProvider>
+              <LocationProvider>
+                <App />
+              </LocationProvider>
+            </WishlistProvider>
           </CartProvider>
         </AuthProvider>
       </ThemeProvider>
