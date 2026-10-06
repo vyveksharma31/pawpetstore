@@ -4,6 +4,7 @@ import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import DogsPage from './pages/DogsPage';
 import CatsPage from './pages/CatsPage';
+import BirdsPage from './pages/BirdsPage';
 import ProductListPage from './pages/ProductListPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CartPage from './pages/CartPage';
@@ -25,7 +26,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="dogs" element={<DogsPage />} />
         <Route path="cats" element={<CatsPage />} />
-        <Route path="birds" element={<ProductListPage />} />
+        <Route path="birds" element={<BirdsPage />} />
         <Route path="products" element={<ProductListPage />} />
         <Route path="products/:id" element={<ProductDetailPage />} />
         <Route path="cart" element={<CartPage />} />

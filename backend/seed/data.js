@@ -180,6 +180,58 @@ const breeds = [
     description: 'Distinguished by their expressive yellow crest and orange cheek patches. Masters of whistling tunes.',
     careTips: 'Needs horizontal flight room inside cage. Avoid non-stick teflon fumes in household.',
     recommendedCategories: ['Flight Cage', 'Wooden Perches', 'Pellet Diet']
+  },
+  {
+    id: 'breed-lovebird',
+    name: 'Lovebird (Agapornis)',
+    petType: 'bird',
+    origin: 'Africa',
+    temperament: ['Affectionate', 'Feisty', 'Monogamous', 'Lively'],
+    size: 'Small (40-60 g)',
+    lifeSpan: '10-15 years',
+    image: 'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80',
+    description: 'Deeply bonded pocket parrots with vibrant plumage and spirited, playful personalities.',
+    careTips: 'Keep in bonded pairs or provide abundant daily attention and shreddable paper/wood toys.',
+    recommendedCategories: ['Shredding Toys', 'Calcium Block', 'Cockatiel/Lovebird Seed']
+  },
+  {
+    id: 'breed-africangrey',
+    name: 'African Grey Parrot',
+    petType: 'bird',
+    origin: 'Equatorial Africa',
+    temperament: ['Genius Intelligence', 'Empathetic', 'Vocal Mimic'],
+    size: 'Large (400-500 g)',
+    lifeSpan: '40-60 years',
+    image: 'https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=800&q=80',
+    description: 'Renowned as the most cognitively gifted parrot in the world with astonishing vocabulary and associative speech.',
+    careTips: 'Demands continuous mental challenges, puzzle foraging feeders, and daily out-of-cage interaction.',
+    recommendedCategories: ['Large Parrot Cage', 'NutriBird Pellets', 'Foraging Puzzles']
+  },
+  {
+    id: 'breed-finch',
+    name: 'Zebra Finch',
+    petType: 'bird',
+    origin: 'Central Australia',
+    temperament: ['Social Colony', 'Active', 'Gentle Beepers'],
+    size: 'Tiny (12-18 g)',
+    lifeSpan: '5-9 years',
+    image: 'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80',
+    description: 'Delightful tiny songbirds with distinctive zebra chest stripes and cheerful quiet beeping sounds.',
+    careTips: 'Thrives in pairs or small flocks inside flight cages. Provide small-seed millet blends and fine grit.',
+    recommendedCategories: ['Finch Seed Mix', 'Woven Nest Basket', 'Fine Mineral Grit']
+  },
+  {
+    id: 'breed-canary',
+    name: 'Atlantic Canary',
+    petType: 'bird',
+    origin: 'Macaronesia (Canary Islands)',
+    temperament: ['Melodic Singer', 'Independent', 'Peaceful'],
+    size: 'Small (20-28 g)',
+    lifeSpan: '9-14 years',
+    image: 'https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=800&q=80',
+    description: 'Famous worldwide for their astonishingly complex, operatic song repertoire and brilliant golden-yellow plumage.',
+    careTips: 'Provide horizontal cage length for flight. Maintain consistent daylight and darkness cycles for molting health.',
+    recommendedCategories: ['Canary Seed Blend', 'Singing Tonic', 'Natural Perches']
   }
 ];
 
@@ -856,6 +908,150 @@ const products = [
     description: 'Essential source of calcium carbonate and trace minerals for healthy beak trimming and strong eggshell formation.',
     specifications: {
       'Includes': '3 Cuttlebones with metal cage holders'
+    }
+  },
+  {
+    id: 'prod-b05',
+    name: 'Natural Hardwood Multi-Branch Perch & Cotton Climbing Rope Spiral',
+    slug: 'natural-hardwood-perch-cotton-rope-spiral',
+    brand: 'PawPetStore Avian',
+    petType: 'bird',
+    category: 'Bird Accessories',
+    subCategory: 'Perches & Swings',
+    price: 799,
+    discountPercentage: 12,
+    stock: 28,
+    rating: 4.8,
+    reviewCount: 94,
+    isFeatured: true,
+    breedSuitability: ['Cockatiel', 'Lovebird', 'Budgerigar', 'African Grey'],
+    images: [
+      'https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Variable diameter wild pepperwood branch that exercises avian foot muscles naturally and prevents bumblefoot sores. Equipped with stainless wing nut cage clamp.',
+    specifications: {
+      'Length': '35 cm',
+      'Material': '100% Organic Pepperwood + Cotton Rope',
+      'Mount': 'Universal Cage Bolt'
+    }
+  },
+  {
+    id: 'prod-b06',
+    name: 'Versele-Laga NutriBird P15 Tropical Maintenance Pellets (1kg)',
+    slug: 'versele-laga-nutribird-p15-tropical-1kg',
+    brand: 'Versele-Laga',
+    petType: 'bird',
+    category: 'Bird Food',
+    subCategory: 'Pellets',
+    price: 1450,
+    discountPercentage: 10,
+    stock: 18,
+    rating: 4.9,
+    reviewCount: 67,
+    isFeatured: true,
+    breedSuitability: ['African Grey Parrot', 'Amazon Parrot', 'Conure'],
+    images: [
+      'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Scientifically validated maintenance pellet for medium to large parrots. Contains selected grains, fresh fruit extracts, and peanuts with zero seed-sorting waste.',
+    specifications: {
+      'Weight': '1 kg',
+      'Protein': '15.0%',
+      'Fat': '16.0%'
+    }
+  },
+  {
+    id: 'prod-b07',
+    name: 'Automatic Gravity Avian Siphon Feeder & Water Drinker Set (200ml)',
+    slug: 'automatic-gravity-feeder-drinker-set',
+    brand: 'PawPetStore Avian',
+    petType: 'bird',
+    category: 'Bird Accessories',
+    subCategory: 'Feeding Bowls & Waterers',
+    price: 349,
+    discountPercentage: 15,
+    stock: 60,
+    rating: 4.7,
+    reviewCount: 152,
+    isFeatured: false,
+    breedSuitability: ['Budgerigar', 'Zebra Finch', 'Canary', 'Lovebird'],
+    images: [
+      'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Crystal-clear food-grade acrylic siphon drinkers that lock onto cage bars. Automatically replenishes clean water and seed while shielding supplies from droppings.',
+    specifications: {
+      'Capacity': '200 ml each',
+      'Attachment': 'Fits wire bars up to 1.8cm spacing'
+    }
+  },
+  {
+    id: 'prod-b08',
+    name: 'Handcrafted Coconut Foraging Shell with Rattan Shredding Balls',
+    slug: 'coconut-foraging-shell-bird-toy',
+    brand: 'PawPetStore Play',
+    petType: 'bird',
+    category: 'Bird Toys',
+    subCategory: 'Bird Toys',
+    price: 499,
+    discountPercentage: 20,
+    stock: 35,
+    rating: 4.8,
+    reviewCount: 88,
+    isFeatured: false,
+    breedSuitability: ['Lovebird', 'Cockatiel', 'Budgerigar', 'African Grey'],
+    images: [
+      'https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Eco-friendly natural coconut shell hanging toy stuffed with edible crinkle paper, chewable rattan balls, and loofah slices to satisfy natural foraging instincts.',
+    specifications: {
+      'Materials': 'Coconut Shell, Bamboo, Loofah, Food-safe Vegetable Dye'
+    }
+  },
+  {
+    id: 'prod-b09',
+    name: 'ZuPreem FruitBlend Flavor Pellets for Cockatiels & Lovebirds (900g)',
+    slug: 'zupreem-fruitblend-cockatiel-lovebird-900g',
+    brand: 'ZuPreem',
+    petType: 'bird',
+    category: 'Bird Food',
+    subCategory: 'Pellets',
+    price: 1199,
+    discountPercentage: 8,
+    stock: 22,
+    rating: 4.9,
+    reviewCount: 115,
+    isFeatured: true,
+    breedSuitability: ['Cockatiel', 'Lovebird', 'Small Parrots'],
+    images: [
+      'https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Bursting with natural fruit flavors (banana, orange, apple, grape). Provides 21 vitamins and minerals without artificial preservatives.',
+    specifications: {
+      'Weight': '900 g',
+      'Pellet Size': 'Cockatiel / Lovebird'
+    }
+  },
+  {
+    id: 'prod-b10',
+    name: 'Iodine Calcium Bell Mineral Block with Seed Cluster (Pack of 2)',
+    slug: 'iodine-calcium-bell-mineral-block-pack-2',
+    brand: 'Vitapol',
+    petType: 'bird',
+    category: 'Bird Accessories',
+    subCategory: 'Mineral Blocks',
+    price: 249,
+    discountPercentage: 10,
+    stock: 55,
+    rating: 4.6,
+    reviewCount: 92,
+    isFeatured: false,
+    breedSuitability: ['Budgerigar', 'Canary', 'Zebra Finch', 'All Birds'],
+    images: [
+      'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Fortified with essential iodine to guard against avian thyroid disorders and calcium for sturdy beak development.',
+    specifications: {
+      'Pack': '2 Mineral Bells with hanger clips'
     }
   },
 
